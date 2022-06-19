@@ -19,7 +19,7 @@ h3 {
 }
 
 h1 {
-  font-size: 150%;
+  font-size: 160%;
   font-weight: 700;
 }
 
@@ -229,6 +229,10 @@ footer i {
 }
 
 @media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 180%;
+  }
+
   header {
     height: 100vh;
     min-height: 900px;
