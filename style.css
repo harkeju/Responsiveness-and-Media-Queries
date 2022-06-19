@@ -129,8 +129,7 @@ nav a:hover {
 }
 
 .logo {
-  width: 100px;
-  height: auto;
+  width: 30%;
 }
 
 .hero {
@@ -287,6 +286,11 @@ footer i {
     height: 100vh;
     min-height: 900px;
     background-image: url(/images/bg-hero-desktop.svg);
+  }
+
+  
+  .logo {
+    width: 80%;
   }
 
   .hero {
