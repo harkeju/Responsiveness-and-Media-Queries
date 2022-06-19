@@ -19,7 +19,6 @@ h3 {
 }
 
 h1 {
-  font-size: 5vw;
   font-weight: 700;
 }
 
@@ -28,63 +27,6 @@ p {
   line-height: 160%;
   font-weight: 400;
   margin: 0 0 20px;
-}
-
-.typewriter h1:nth-child(1) {
-  width: 0;
-  margin: auto;
-  overflow: hidden;
-  border-right: 0.15em solid hsl(322, 100%, 66%);
-  white-space: nowrap;
-  animation: typing 2s steps(40, end) forwards,
-    blink-caret 0.75s step-end infinite;
-}
-
-.typewriter h1:nth-child(2) {
-  width: 0;
-  margin: auto;
-  overflow: hidden;
-  border-right: 0.15em solid hsl(322, 100%, 66%);
-  white-space: nowrap;
-  animation: typing2 2s steps(40, end) forwards,
-    blink-caret 0.75s step-end infinite;
-  animation-delay: 2s;
-}
-
-@keyframes typing {
-  from {
-    width: 50%;
-  }
-  to {
-    width: 100%;
-  }
-
-  100% {
-    border: none;
-  }
-}
-
-@keyframes typing2 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-
-  100% {
-    border: none;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: hsl(322, 100%, 66%);
-  }
 }
 
 header {
@@ -97,7 +39,7 @@ header {
 
 nav {
   display: inline-block;
-  padding: 50px 5%;
+  padding: 50px 30px;
   width: 100%;
 }
 
@@ -133,7 +75,7 @@ nav a:hover {
 }
 
 .logo {
-  width: 200px;
+  width: 180px;
 }
 
 .hero {
@@ -286,13 +228,14 @@ footer i {
 }
 
 @media only screen and (min-width: 1440px) {
-  h1 {
-    font-size: 40px;
-  }
   header {
     height: 100vh;
     min-height: 900px;
     background-image: url(/images/bg-hero-desktop.svg);
+  }
+
+  nav {
+    padding: 50px 10%;
   }
 
   .logo {
@@ -383,5 +326,60 @@ footer i {
   .copyright {
     text-align: right;
     margin: 0 80px 60px;
+  }
+
+  .typewriter h1:nth-child(1) {
+    width: 0;
+    overflow: hidden;
+    border-right: 0.15em solid hsl(322, 100%, 66%);
+    white-space: nowrap;
+    animation: typing 2s steps(40, end) forwards,
+      blink-caret 0.75s step-end infinite;
+  }
+
+  .typewriter h1:nth-child(2) {
+    width: 0;
+    overflow: hidden;
+    border-right: 0.15em solid hsl(322, 100%, 66%);
+    white-space: nowrap;
+    animation: typing2 2s steps(40, end) forwards,
+      blink-caret 0.75s step-end infinite;
+    animation-delay: 2s;
+  }
+
+  @keyframes typing {
+    from {
+      width: 50%;
+    }
+    to {
+      width: 100%;
+    }
+
+    100% {
+      border: none;
+    }
+  }
+
+  @keyframes typing2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+
+    100% {
+      border: none;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: hsl(322, 100%, 66%);
+    }
   }
 }
