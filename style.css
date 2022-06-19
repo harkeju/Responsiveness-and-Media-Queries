@@ -129,7 +129,8 @@ nav a:hover {
 }
 
 .logo {
-  width: 70%;
+  width: 100px;
+  height: auto;
 }
 
 .hero {
